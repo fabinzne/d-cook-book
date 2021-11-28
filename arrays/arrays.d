@@ -12,6 +12,7 @@ void main() {
   // arrays estáticos necessitam estar entre o operador [].
 
   writeln("The sum of ", arr, " is ", sum(arr));
+  writeln("Slicing the array ", arr, " from 0 to 2 is ", arr[0..2]);
 }
 
 int sum(in int[] data) {
