@@ -8,6 +8,9 @@ void main() {
   arr ~= 1;
   arr ~= [2, 3];
 
+  // Arrays dinamicos podem ser passados diretamente. Já
+  // arrays estáticos necessitam estar entre o operador [].
+
   writeln("The sum of ", arr, " is ", sum(arr));
 }
 
