@@ -13,6 +13,15 @@ void main() {
 
   writeln("The sum of ", arr, " is ", sum(arr));
   writeln("Slicing the array ", arr, " from 0 to 2 is ", arr[0..2]);
+
+  // Ainda temos mais, D suporte uma operação de arrays de vetores
+  // como a seguir:
+
+  arr[] = arr[] + 5;
+
+  // Esse código vai adicionar 5 em cada elemento do array.
+
+  writeln("Adding 5 to every element to arr gives ", arr);
 }
 
 int sum(
