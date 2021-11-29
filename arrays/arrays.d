@@ -15,7 +15,14 @@ void main() {
   writeln("Slicing the array ", arr, " from 0 to 2 is ", arr[0..2]);
 }
 
-int sum(in int[] data) {
+int sum(
+  /* A chave in informar que a variavel é um input e fornece
+  para a variavel que ela possui um escopo de constante,
+  logo ela não pode ser alterada durante a execução e apenas
+  então você mantem uma copia em memoria do array ou informa
+  uma referencia para a memoria passada */
+  in int[] data
+) {
   int total = 0;
   foreach (item; data)
     total += item;
