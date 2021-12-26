@@ -1,5 +1,7 @@
 *
 !*.d
+!*.jpg
+!*.css
 !*/
 !Makefile
 !.gitignore
