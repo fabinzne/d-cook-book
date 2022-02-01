@@ -38,11 +38,13 @@ struct OurMap(alias transformation, T)
       @property auto back() {
         return transformation(range.back);
       }
+
+      void popBack() {
+        range.popBack();
+      }
     }
 
-    void popBack() {
-      range.popBack();
-    }
+
 
     static if(isRandomAccessRange!T) {
       auto opIndex(size_t idx) {
